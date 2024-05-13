@@ -1,0 +1,37 @@
+.nav-item{
+    color: white;
+    font-size: 1.25rem;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: capitalize;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    background-color: darkblue;
+}
+
+.pages{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-item:hover{
+    background-color: white;
+    color: darkblue;
+}
+
+.logo{
+    width: 60px;
+    height: 100%;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    margin: auto 0;
+    color: white;
+}
+
