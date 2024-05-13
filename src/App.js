@@ -6,6 +6,7 @@ import { Portfolio } from "./pages/portfolio/Portfolio";
 import { Product } from "./pages/product/Product";
 import { Layout } from "./navigation/Layout";
 import "./app.css"
+import { Footer } from "./navigation/Footer";
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="*" element={<Contact />} />
       </Routes>
-      
+      <Footer />
     </>
   );
 }
