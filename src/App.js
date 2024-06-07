@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home/Home";
 import { About } from "./pages/about/About";
@@ -8,9 +10,22 @@ import { Layout } from "./navigation/Layout";
 import "./app.css"
 import { Footer } from "./navigation/Footer";
 
+import data from "./base.json"
+
+const mappedData = data.map( person => ({
+  ...person,
+  fullname:`${person.name} ${person.surname}`
+}))
+
 function App() {
+
+useEffect(() => {
+  console.log(mappedData);
+})
+
   return (
     <>
+
       <Layout />
       <Routes>
         <Route path="/" element={<Home />} />
